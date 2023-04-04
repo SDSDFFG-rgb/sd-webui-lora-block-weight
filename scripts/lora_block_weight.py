@@ -112,7 +112,7 @@ class Script(modules.scripts.Script):
         with gr.Accordion("LoRA Block Weight",open = False):
             with gr.Row():
                 with gr.Column(min_width = 50, scale=1):
-                    lbw_useblocks =  gr.Checkbox(value = False,label="Active",interactive =True,elem_id="lbw_active")
+                    lbw_useblocks =  gr.Checkbox(value = False,label="Enable",interactive =True,elem_id="lbw_active")
                 with gr.Column(scale=5):
                     bw_ratiotags= gr.TextArea(label="",lines=2,value=ratiostags,visible =True,interactive =True,elem_id="lbw_ratios") 
             with gr.Accordion("XYZ plot",open = False):
